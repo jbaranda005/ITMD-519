@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackageVersion>1.0</PackageVersion>
+    <Description>MortgageHelperLibrary</Description>
+    <PackageId>MortgageHelper</PackageId>
+    <Authors>MortgageHelper</Authors>
+    <IsPackable>true</IsPackable>
+    <GeneratePackOnBuild>true</GeneratePackOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MortgageCalcHelper.cs">
+      <IncludeInPackage>true</IncludeInPackage>
+    </Compile>
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2"><PrivateAssets>all</PrivateAssets>
+<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+</PackageReference>
+  </ItemGroup>
+ 
+</Project>

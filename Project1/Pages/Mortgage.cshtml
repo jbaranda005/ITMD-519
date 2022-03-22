@@ -1,0 +1,17 @@
+﻿@page
+@model Project1.Pages.MortgageModel
+@{
+}
+
+<form method="post">
+    <label asp-for="LoanValue">Loan Amount</label>
+    <input asp-for="LoanValue" type="text" value="" /><br/>
+    <label asp-for="InterestValue" >Interest</label>
+    <input asp-for="InterestValue" type="text" value="" /><br/>
+    <label asp-for="DurationValue">Duration</label>
+    <input asp-for="DurationValue" type="text" value="" /><br/>
+    <button>Compute</button>
+</form>
+
+
+<p>@Model.MortgageResult</p>
